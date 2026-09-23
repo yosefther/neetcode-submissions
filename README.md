@@ -2,11 +2,11 @@
 
 My working collection of data structures and algorithms solutions.
 
-This repository is less about collecting green checkmarks and more about keeping a record of how my problem-solving evolves. Some problem folders contain several submissions so I can revisit earlier ideas, compare tradeoffs, and see what became simpler over time.
+This repository is less about collecting green checkmarks and more about building a focused reference for the patterns I have learned. Each problem folder keeps the strongest solution from my attempts.
 
 ## Progress
 
-**11 problems · 32 Python submissions**
+**11 problems · 11 Python solutions**
 
 | Pattern | Problems |
 | --- | --- |
@@ -19,12 +19,10 @@ This repository is less about collecting green checkmarks and more about keeping
 ```text
 Data Structures & Algorithms/
 └── problem-name/
-    ├── submission-0.py
-    ├── submission-1.py
-    └── ...
+    └── submission-N.py
 ```
 
-Each problem has its own directory. Multiple submission files represent separate attempts or implementations rather than duplicate copies of one canonical answer.
+Each problem has its own directory and one selected solution. The numeric suffix preserves the solution's original submission number.
 
 ## Approach
 
