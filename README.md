@@ -6,13 +6,13 @@ This repository is less about collecting green checkmarks and more about buildin
 
 ## Progress
 
-**11 problems · 11 Python solutions**
+**12 problems · 14 Python submissions**
 
 | Pattern | Problems |
 | --- | --- |
 | Arrays & hashing | [Contains Duplicate](<Data Structures & Algorithms/duplicate-integer>), [Valid Anagram](<Data Structures & Algorithms/is-anagram>), [Two Sum](<Data Structures & Algorithms/two-integer-sum>), [Group Anagrams](<Data Structures & Algorithms/anagram-groups>), [Top K Frequent Elements](<Data Structures & Algorithms/top-k-elements-in-list>), [Encode and Decode Strings](<Data Structures & Algorithms/string-encode-and-decode>) |
 | Two pointers | [Valid Palindrome](<Data Structures & Algorithms/is-palindrome>), [Two Sum II](<Data Structures & Algorithms/two-integer-sum-ii>), [3Sum](<Data Structures & Algorithms/three-integer-sum>) |
-| Stack | [Valid Parentheses](<Data Structures & Algorithms/validate-parentheses>), [Min Stack](<Data Structures & Algorithms/minimum-stack>) |
+| Stack | [Valid Parentheses](<Data Structures & Algorithms/validate-parentheses>), [Min Stack](<Data Structures & Algorithms/minimum-stack>), [Evaluate Reverse Polish Notation](<Data Structures & Algorithms/evaluate-reverse-polish-notation>) |
 
 ## Repository layout
 
