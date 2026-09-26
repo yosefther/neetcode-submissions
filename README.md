@@ -7,7 +7,7 @@ This repository is less about collecting green checkmarks and more about buildin
 ## Progress
 
 <!-- progress:start -->
-**15 problems · 17 Python submissions**
+**15 problems · 18 Python submissions**
 
 | Pattern | Problems |
 | --- | --- |
@@ -45,10 +45,10 @@ Render a scene using `uv run`:
 uv run manim -pql "Data Structures & Algorithms/duplicate-integer/visualization.py" ContainsDuplicateScene
 ```
 
-For example, to render Koko Eating Bananas:
+For example, to render the Koko Eating Bananas binary search solution:
 
 ```bash
-uv run manim -pql "Data Structures & Algorithms/koko-eating-bananas/visualization.py" KokoEatingBananasScene
+uv run manim -pqm "Data Structures & Algorithms/koko-eating-bananas/visualization.py" KokoBinarySearchScene
 ```
 
 Replace the file path and scene name with an entry below to render another problem. `-pql` renders a low quality preview and opens it; use `-pqm` for a sharper 720p preview with more readable text; use `-qh` for high quality output, or omit `-p` when running without a desktop. Generated videos are saved under `media/videos/`.
@@ -71,9 +71,12 @@ The scenes use `Text` and do not require LaTeX. Shared layout helpers live in [v
 | Evaluate Reverse Polish Notation | [visualization.py](<Data Structures & Algorithms/evaluate-reverse-polish-notation/visualization.py>) | `ReversePolishNotationScene` |
 | Binary Search | [visualization.py](<Data Structures & Algorithms/binary-search/visualization.py>) | `BinarySearchScene` |
 | Search a 2D Matrix | [visualization.py](<Data Structures & Algorithms/search-2d-matrix/visualization.py>) | `SearchMatrixScene` |
-| Koko Eating Bananas | [visualization.py](<Data Structures & Algorithms/koko-eating-bananas/visualization.py>) | `KokoEatingBananasScene` |
+| Koko Eating Bananas (linear scan) | [visualization.py](<Data Structures & Algorithms/koko-eating-bananas/visualization.py>) | `KokoEatingBananasScene` |
+| Koko Eating Bananas (binary search) | [visualization.py](<Data Structures & Algorithms/koko-eating-bananas/visualization.py>) | `KokoBinarySearchScene` |
 
-Koko Eating Bananas follows the submitted linear scan through speeds, with O(n * M) time and O(1) extra space, where M is the largest pile. Its scene shows the per-pile ceiling division and stops at the first speed that meets the hour limit.
+Koko Eating Bananas includes a [linear scan solution](<Data Structures & Algorithms/koko-eating-bananas/submission-0.py>) with O(n * M) time and a [binary search solution](<Data Structures & Algorithms/koko-eating-bananas/submission-1.py>) with O(n log M) time. Both use O(1) extra space, where M is the largest pile. The binary search scene places `left`, `mid`, and `right` pointers over candidate speeds, calculates `math.ceil(pile / mid)` for each pile, and saves the best feasible speed while narrowing the range.
+
+Render the binary search scene with the command above to create `media/videos/visualization/720p30/KokoBinarySearchScene.mp4`. Generated videos stay local in the ignored `media/` directory.
 
 ## Approach
 

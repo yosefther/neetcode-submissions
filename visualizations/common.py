@@ -27,7 +27,7 @@ POINTER_COLORS = (CURRENT, ACCENT, "#C4A1FF")
 class AlgorithmScene(Scene):
     """Keep input, working state, explanation, and result in fixed regions."""
 
-    def begin(self, title, description, values):
+    def begin(self, title, description, values, input_label_text="INPUT"):
         self.camera.background_color = BACKGROUND
         self.step_number = 0
         self.pointer_side = UP
@@ -38,7 +38,7 @@ class AlgorithmScene(Scene):
         input_panel = self.panel(12.8, 2.15).move_to(UP * 1.5)
         state_panel = self.panel(12.8, 2.25).move_to(DOWN)
         caption_panel = self.panel(12.8, 0.8).move_to(DOWN * 2.7)
-        input_label = self.label("INPUT", 16, 1.2, MUTED).move_to(LEFT * 5.8 + UP * 2.3)
+        input_label = self.label(input_label_text, 16, 1.2, MUTED).move_to(LEFT * 5.8 + UP * 2.3)
         state_label = self.label("WORKING STATE", 16, 3, ACCENT).move_to(LEFT * 4.95 + DOWN * 0.14)
         self.counter = self.label("STEP 00", 16, 1.5, MUTED).move_to(RIGHT * 5.55 + DOWN * 0.14)
         self.cells = VGroup(*[self.cell(value, index) for index, value in enumerate(values)])
